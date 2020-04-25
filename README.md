@@ -27,7 +27,7 @@
 ### Production run localhost url
 ```dotnet [name].dll --urls="http://localhost:5000"```
 
-** _Do NOT use ```dotnet run``` in production_ **
+**_Do NOT use ```dotnet run``` in production_**
 
 ## Curl
 
