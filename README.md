@@ -29,8 +29,8 @@
 
 ## Curl
 
-# All (headers & response output)
-```curl -v [url]````
+### All (headers & response output)
+```curl -v [url]```
 
-# Response output
-```curl -o - [url]````
+### Response output
+```curl -o - [url]```
