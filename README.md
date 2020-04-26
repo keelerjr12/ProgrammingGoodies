@@ -65,3 +65,14 @@ systemd disable myapp
 
 ### Response output
 ```curl -o - [url]```
+
+## SSH
+
+### Change port
+Navigate to ```/etc/ssh/```
+
+Open ```sshd_config```
+
+Change port
+
+Restart ssh with: ```services ssh restart```
