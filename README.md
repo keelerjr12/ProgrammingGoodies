@@ -29,6 +29,35 @@
 
 **_Do NOT use ```dotnet run``` in production_**
 
+## Linux
+### Setup service
+In ```/etc/systemd/system``` create a file ```myapp.service```:
+```
+[Unit]
+Description=My application description
+
+[Service]
+WorkingDirectory=/usr/share/myapp
+ExecStart=/usr/bin/dotnet /usr/share/myapp/myapp.dll
+SyslogIdentifier=myapp
+User=www-data
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### Add/Start service
+```
+systemctl enable myapp
+systemctl start myapp
+```
+
+### Stop/Remove service
+```
+systemd stop myapp
+systemd disable myapp
+```
+
 ## Curl
 
 ### All (headers & response output)
