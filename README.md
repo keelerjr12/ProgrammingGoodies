@@ -22,7 +22,7 @@
 
 ## ASPNETCORE
 ### Production publish
-```dotnet publish```
+```dotnet publish --configuration Release```
 
 ### Production run localhost url
 ```dotnet [name].dll --urls="http://localhost:5000"```
