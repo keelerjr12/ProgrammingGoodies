@@ -54,7 +54,7 @@ systemctl start myapp
 
 ### Stop/Remove service
 ```
-systemd stop myapp
+systectl stop myapp
 systemd disable myapp
 ```
 
